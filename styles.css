@@ -3,17 +3,22 @@ body {
     border: 0px;
 }
 
+#box01 {
+    align-items: center;
+    justify-content: center;
+}
 #container {
     display: flex;
     flex-wrap: wrap;
-    width: 540px;
-    height: 400px;
+    width: 450px;
+    height: 450px;
+    border: 1px solid;
+    margin: auto;   
 }
 
 .divGrid {
-    border: 1px solid;
-    width: 30px;
-    height: 30px; 
+    flex: 1 1 calc(400px / 15);
+    border: solid black 1px;
 }
 
 
