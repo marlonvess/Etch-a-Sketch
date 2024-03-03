@@ -14,11 +14,11 @@ body {
     height: 450px;
     border: 1px solid;
     margin: auto;   
+    
 }
 
 .divGrid {
-    flex: 1 1 calc(400px / 15);
-    border: solid black 1px;
+    flex: 1 1 calc(450px/21);
 }
 
 
