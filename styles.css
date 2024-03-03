@@ -1,12 +1,16 @@
 body {
     padding: 0px;
     border: 0px;
+    background: rgb(167,144,186);
+background: linear-gradient(90deg, rgba(167,144,186,1) 1%, rgba(142,142,194,1) 37%, rgba(0,255,181,1) 96%);
 }
 
 #box01 {
-    align-items: center;
+    display: flex;
     justify-content: center;
-}
+    gap: 10px;
+   }
+
 #container {
     display: flex;
     flex-wrap: wrap;
@@ -14,11 +18,21 @@ body {
     height: 450px;
     border: 1px solid;
     margin: auto;   
-    
+    background-color: #efe4e4;
 }
 
-.divGrid {
-    flex: 1 1 calc(450px/21);
+#numberSlide {
+   width: 60px;
+   justify-content: center;
+   
 }
 
 
+#header {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 0;
+    margin: auto;
+}
