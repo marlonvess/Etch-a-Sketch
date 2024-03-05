@@ -12,13 +12,20 @@ function createGrid(size) {
     container.appendChild(newDiv);
   }
 
+
+  let color=document.getElementById('colorPicker');
+
+  
+  color.addEventListener("input", () => {colorPicked=color.value;});
+
+  
   // Update the clickDivs variable after creating new divs
   var clickDivs = document.querySelectorAll('.divGrid');
 
   // Add a click event to change each div color to black
   clickDivs.forEach(function (div) {
     div.addEventListener('click', function () {
-      div.style.backgroundColor = "#393737";
+      div.style.backgroundColor = colorPicked;
     });
 
     // Adjust the size of the grid items based on the new size
@@ -27,7 +34,7 @@ function createGrid(size) {
 }
 
 let gridValue = sliderInput.value;
-sliderOutput.textContent = `Grid Size: ${gridValue}`;
+sliderOutput.textContent = `Grid Size: ${gridValue}x${gridValue}`;
 
 sliderInput.addEventListener('input', function () {
   // Update the variable with the slider value
