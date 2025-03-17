@@ -15,7 +15,6 @@ function createGrid(size) {
 
   let color=document.getElementById('colorPicker');
 
-  
   color.addEventListener("input", () => {colorPicked=color.value;});
 
   
